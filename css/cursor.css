@@ -1,0 +1,21 @@
+.cursorSmall {
+    width: 8px;
+    height: 8px;
+    mix-blend-mode: difference;
+    border-radius: 50%;
+    background-color: #ddd;
+    position: fixed;
+    transform: translate(-50%, -50%);
+}
+
+.cursorBig {
+    mix-blend-mode: difference;
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    border: solid #ddd 1px;
+    border-radius: 50%;
+    top: -17px;
+    left: -17px;
+}
