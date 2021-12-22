@@ -1,0 +1,96 @@
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: none;
+  scrollbar-color: #dddddd #222222;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 7px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #222222;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #dddddd;
+  border-radius: 30px;
+  border: 0px none #ffffff;
+}
+
+/* ===== FONTS ===== */
+@font-face {
+  font-family: 'helveticaregular';
+  src: url("fonts/helvetica-webfont.woff2") format("woff2"), url("fonts/helvetica-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'helveticabold';
+  src: url("fonts/helvetica-bold-webfont.woff2") format("woff2"), url("fonts/helvetica-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'helveticabold_oblique';
+  src: url("fonts/helvetica-boldoblique-webfont.woff2") format("woff2"), url("fonts/helvetica-boldoblique-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'helveticaoblique';
+  src: url("fonts/helvetica-oblique-webfont.woff2") format("woff2"), url("fonts/helvetica-oblique-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'wagonextra_light_italic';
+  src: url("fonts/wagon-extralightitalic-webfont.woff2") format("woff2"), url("fonts/wagon-extralightitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ragnorthbold';
+  src: url("fonts/wagon-bold-webfont.woff2") format("woff2"), url("fonts/wagon-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'wagonextra_light';
+  src: url("fonts/wagon-extralight-webfont.woff2") format("woff2"), url("fonts/wagon-extralight-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ===== Estilos basicos ===== */
+body {
+  /*cursor: none; */
+  background-color: #161616;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(24%, transparent), color-stop(25%, rgba(255, 255, 255, 0.05)), color-stop(26%, rgba(255, 255, 255, 0.05)), color-stop(27%, transparent), color-stop(74%, transparent), color-stop(75%, rgba(255, 255, 255, 0.05)), color-stop(77%, transparent), to(transparent)), -webkit-gradient(linear, left top, right top, color-stop(24%, transparent), color-stop(25%, rgba(255, 255, 255, 0.05)), color-stop(26%, rgba(255, 255, 255, 0.05)), color-stop(27%, transparent), color-stop(74%, transparent), color-stop(75%, rgba(255, 255, 255, 0.05)), color-stop(77%, transparent), to(transparent));
+  background-image: linear-gradient(0deg, transparent 24%, rgba(255, 255, 255, 0.05) 25%, rgba(255, 255, 255, 0.05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, 0.05) 75%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, 0.05) 25%, rgba(255, 255, 255, 0.05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, 0.05) 75%, transparent 77%, transparent);
+  background-size: 50px 50px;
+  color: #ddd;
+}
+
+body::before {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  content: "";
+  opacity: .02;
+  pointer-events: none;
+  background: url(../img/noise.gif);
+}
+
+/* ===== Grelha ===== */
+/*# sourceMappingURL=grid.css.map */

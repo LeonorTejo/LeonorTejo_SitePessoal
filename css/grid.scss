@@ -1,0 +1,108 @@
+
+$backgroundColor: rgb(22, 22, 22);
+$textColor : #ddd;
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: none;
+    scrollbar-color: #dddddd #222222;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 7px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #222222;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #dddddd;
+    border-radius: 30px;
+    border: 0px none #ffffff;
+}
+
+
+/* ===== FONTS ===== */
+@font-face {
+    font-family: 'helveticaregular';
+    src: url('fonts/helvetica-webfont.woff2') format('woff2'),
+         url('fonts/helvetica-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'helveticabold';
+    src: url('fonts/helvetica-bold-webfont.woff2') format('woff2'),
+         url('fonts/helvetica-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'helveticabold_oblique';
+    src: url('fonts/helvetica-boldoblique-webfont.woff2') format('woff2'),
+         url('fonts/helvetica-boldoblique-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'helveticaoblique';
+    src: url('fonts/helvetica-oblique-webfont.woff2') format('woff2'),
+         url('fonts/helvetica-oblique-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'wagonextra_light_italic';
+    src: url('fonts/wagon-extralightitalic-webfont.woff2') format('woff2'),
+         url('fonts/wagon-extralightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ragnorthbold';
+    src: url('fonts/wagon-bold-webfont.woff2') format('woff2'),
+         url('fonts/wagon-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'wagonextra_light';
+    src: url('fonts/wagon-extralight-webfont.woff2') format('woff2'),
+         url('fonts/wagon-extralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* ===== Estilos basicos ===== */
+body {
+    /*cursor: none; */
+    background-color: $backgroundColor;
+    background-image: linear-gradient(0deg, transparent 24%, rgba(255, 255, 255, .05) 25%, rgba(255, 255, 255, .05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .05) 75%, transparent 77%, transparent), 
+    linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, .05) 25%, rgba(255, 255, 255, .05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .05) 75%, transparent 77%, transparent);
+    background-size:50px 50px;
+    color: $textColor;
+}
+
+body::before{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    content: "";
+    opacity: .02;
+    pointer-events: none;
+    background: url(../img/noise.gif) ;
+}
+
+/* ===== Grelha ===== */

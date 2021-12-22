@@ -1,41 +1,24 @@
-
-/* ===== Scrollbar CSS ===== */
-  /* Firefox */
-* {
-    scrollbar-width: none;
-    scrollbar-color: #dddddd #222222;
-}
-
-/* Chrome, Edge, and Safari */
-*::-webkit-scrollbar {
-    width: 7px;
-}
-
-*::-webkit-scrollbar-track {
-    background: #222222;
-}
-
-*::-webkit-scrollbar-thumb {
-    background-color: #dddddd;
-    border-radius: 30px;
-    border: 0px none #ffffff;
-}
-
 body {
-    /*cursor: none; */
-    background-color: #222;
-    background-image: radial-gradient(circle, rgba(221, 221, 221, 0.486) 0.5px, rgba(0, 0, 0, 0) 1.5px);
-    background-size: 40px 40px;
-    color: #ddd;
-    line-height: 1.4;
-    font-weight: 400;
-    font-family: monospace;
-    overflow-x: hidden;
+  /*cursor: none; */
+  line-height: 1.4;
+  font-weight: 400;
+  overflow-x: hidden;
 }
 
-.panel{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.panel {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
+.panel h1 {
+  font-family: 'wagonextra_light', Arial, Helvetica, sans-serif;
+}
+/*# sourceMappingURL=main.css.map */

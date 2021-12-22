@@ -1,0 +1,19 @@
+
+
+body {
+    /*cursor: none; */
+    line-height: 1.4;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+
+.panel{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+        font-family: 'wagonextra_light', Arial, Helvetica, sans-serif;
+    }
+}
