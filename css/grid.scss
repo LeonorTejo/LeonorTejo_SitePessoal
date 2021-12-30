@@ -1,28 +1,6 @@
 $backgroundColor: #ddd;
 $textColor: rgb(22, 22, 22);
 
-/* ===== Scrollbar CSS ===== */
-/* Firefox 
-* {
-  scrollbar-width: none;
-  scrollbar-color: #dddddd #222222;
-}
-
-/* Chrome, Edge, and Safari 
-*::-webkit-scrollbar {
-  width: 7px;
-}
-
-*::-webkit-scrollbar-track {
-  background: #222222;
-}
-
-*::-webkit-scrollbar-thumb {
-  background-color: #dddddd;
-  border-radius: 30px;
-  border: 0px none #ffffff;
-}*/
-
 ::-webkit-scrollbar {
   display: none;
 }
@@ -158,7 +136,9 @@ div {
   clear: both;
 }
 
+
 @media only screen and (min-width: 1101px) {
+  
   .clear {
     height: 15vh;
   }
