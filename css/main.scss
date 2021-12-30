@@ -1,19 +1,504 @@
+/* ===== FONTS ===== 
 
+'helveticaregular'
+'helveticabold'
+'helveticabold_oblique'
+'helveticaoblique'
+'wagonextra_light_italic'
+'ragnorthbold'
+'wagonextra_light'
 
-body {
-    /*cursor: none; */
-    line-height: 1.4;
-    font-weight: 400;
-    overflow-x: hidden;
+shift+alt+f
+*/
+
+/* ------- scrollbar -------*/
+progress {
+  -webkit-appearance: none;
+  appearance: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transform: translate(calc(50% - 3px), calc(50vh - 50%)) rotate(90deg);
+  width: 100vh;
+  height: 6px;
 }
 
-.panel{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+progress::-webkit-progress-bar {
+  background-color: transparent;
+}
 
-    h1{
-        font-family: 'wagonextra_light', Arial, Helvetica, sans-serif;
+progress[value="100"]::-webkit-progress-bar {
+  background-color: #ddd;
+}
+
+progress::-webkit-progress-value {
+  background-color: #ddd;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+@media only screen and (min-width: 1101px) {
+  /* ------- PRIMEIRO -------*/
+  .first {
+    p {
+      text-align: center;
     }
+
+    h1 {
+      margin: 0 0 0 0;
+      font-variant: small-caps;
+      text-align: center;
+      font-size: 8vw;
+    }
+
+    .div1 {
+      font-family: "ragnorthbold", serif;
+      display: flex;
+
+      h1 {
+        align-self: flex-end;
+      }
+    }
+
+    .div2 {
+      letter-spacing: 0.7vw;
+      font-family: "wagonextra_light_italic", serif;
+
+      h1 {
+        font-weight: 300;
+      }
+    }
+
+    .div4 {
+      font-family: "helveticaoblique", sans-serif;
+    }
+
+    .div3 {
+      margin-top: 25px;
+      margin-left: 30px;
+
+      p {
+        text-align: left;
+      }
+    }
+
+    .div5 {
+      display: table-cell;
+
+      p {
+        vertical-align: bottom;
+      }
+    }
+  }
+
+  /* ------- SEGUNDO -------*/
+  .second {
+    h1 {
+      font-family: "wagonextra_light", serif;
+      margin: 0 0 0 0;
+      font-size: 6vw;
+      font-weight: 550;
+    }
+
+    p {
+      margin: 0 0 0 0;
+      font-size: 0.75vw;
+    }
+
+    .div1,
+    .div4 {
+      text-align: right;
+
+      h1 {
+        font-family: "wagonextra_light_italic", serif;
+        font-weight: 100;
+      }
+    }
+
+    .div3 {
+      hr {
+        margin-top: 50px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: inset;
+        border-width: 1px;
+        color: #ddd;
+      }
+    }
+  }
+
+  /* ------- TERCEIRO -------*/
+  .third {
+    .hiddenn {
+      cursor: pointer;
+      opacity: 0;
+      transition: opacity 0.5s;
+    }
+
+    .hiddenn:hover {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    p {
+      position: absolute;
+      font-size: 1.1vw;
+      font-variant: small-caps;
+      width: 29vw;
+    }
+
+    .about {
+      :first-child {
+        margin-left: 15vw;
+        margin-top: 5vw;
+      }
+
+      :nth-child(2) {
+        margin-left: 55vw;
+        margin-top: 20vw;
+      }
+    }
+  }
+
+  /* ------- ULTIMO -------*/
+
+  .last {
+    h1 {
+      font-family: "wagonextra_light", serif;
+      margin: 0 0 0 0;
+      font-weight: 100;
+      font-size: 6vw;
+    }
+
+    h2 {
+      font-size: 3vw;
+      font-family: "wagonextra_light_italic", serif;
+      margin: 0 0 0 0;
+      font-weight: 50;
+    }
+  }
+}
+
+@media only screen and (min-width: 801px) and (max-width: 1100px) {
+  /* ------- PRIMEIRO -------*/
+  .first {
+    h1 {
+      margin: 0 0 0 0;
+      font-variant: small-caps;
+      text-align: center;
+      font-size: 9.5vw;
+    }
+
+    .div1 {
+      font-family: "ragnorthbold", serif;
+      display: flex;
+
+      h1 {
+        align-self: flex-end;
+      }
+    }
+
+    .div2 {
+      letter-spacing: 0.7vw;
+      font-family: "wagonextra_light_italic", serif;
+
+      h1 {
+        font-weight: 300;
+      }
+    }
+    .div3 {
+      p {
+        text-align: left;
+      }
+    }
+    .div4 {
+      font-family: "helveticaoblique";
+      text-align: center;
+    }
+  }
+
+  /* ------- SEGUNDO -------*/
+  .second {
+    h1 {
+      font-family: "wagonextra_light", serif;
+      margin: 0 0 0 0;
+      font-size: 8vw;
+      font-weight: 550;
+    }
+
+    .div1,
+    .div4 {
+      text-align: right;
+
+      h1 {
+        font-family: "wagonextra_light_italic", serif;
+        font-weight: 100;
+      }
+    }
+
+    .div3 {
+      hr {
+        margin-top: 30px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-style: inset;
+        border-width: 1px;
+        color: #ddd;
+      }
+    }
+  }
+
+  /* ------- TERCEIRO -------*/
+  .third {
+    .hiddenn {
+      opacity: 1;
+    }
+
+    p {
+      position: relative;
+      font-size: 2.3vw;
+      font-variant: small-caps;
+      width: 50vw;
+    }
+
+    .about {
+      :nth-child(2) {
+        margin-top: 5vw;
+        margin-left: 30vw;
+      }
+    }
+  }
+
+  /* ------- ULTIMO -------*/
+
+  .last {
+    h1 {
+      font-family: "wagonextra_light", serif;
+      margin: 0 0 0 0;
+      font-weight: 100;
+      font-size: 6vw;
+    }
+
+    h2 {
+      font-size: 3vw;
+      font-family: "wagonextra_light_italic", serif;
+      margin: 0 0 0 0;
+      font-weight: 50;
+    }
+  }
+}
+
+@media only screen and (min-width: 451px) and (max-width: 800px) {
+  .first {
+    h1 {
+      margin: 0 0 0 3.5vw;
+      font-variant: small-caps;
+      font-size: 24vw;
+    }
+
+    .div1 {
+      font-family: "ragnorthbold", serif;
+      display: flex;
+
+      h1 {
+        align-self: flex-end;
+      }
+    }
+
+    .div2 {
+      letter-spacing: 2vw;
+      font-family: "wagonextra_light_italic", serif;
+
+      h1 {
+        text-align: center;
+        font-weight: 300;
+      }
+    }
+    .div3 {
+      margin-top: -10vw;
+      margin-left: -3vw;
+      p {
+        text-align: left;
+      }
+    }
+
+    .div4 {
+      font-family: "helveticaoblique";
+      text-align: center;
+    }
+  }
+
+  /* ------- SEGUNDO -------*/
+  .second {
+    h1 {
+      font-family: "wagonextra_light", serif;
+      margin: 0 0 0 0;
+      font-size: 11vw;
+      font-weight: 550;
+    }
+
+    .div1,
+    .div4 {
+      text-align: right;
+
+      h1 {
+        font-family: "wagonextra_light_italic", serif;
+        font-weight: 100;
+      }
+    }
+
+    .div3 {
+      hr {
+        visibility: hidden;
+      }
+    }
+  }
+
+  /* ------- TERCEIRO -------*/
+  .third {
+    .hiddenn {
+      opacity: 1;
+    }
+
+    p {
+      position: relative;
+      font-size: 4vw;
+      font-variant: small-caps;
+      width: 75vw;
+    }
+
+    .about {
+      :nth-child(2) {
+        margin-top: 5vw;
+      }
+    }
+  }
+
+  /* ------- ULTIMO -------*/
+
+  .last {
+    h1 {
+      font-family: "wagonextra_light", serif;
+      margin: 0 0 0 0;
+      font-weight: 100;
+      font-size: 7.8vw;
+    }
+
+    h2 {
+      font-size: 6vw;
+      font-family: "wagonextra_light_italic", serif;
+      margin: 0 0 0 0;
+      font-weight: 50;
+    }
+  }
+
+}
+
+
+@media only screen and (max-width: 450px) {
+  /* ------- PRIMEIRO -------*/
+  .first {
+    h1 {
+      margin: 0 0 0 3.5vw;
+      font-variant: small-caps;
+      font-size: 24vw;
+    }
+
+    .div1 {
+      font-family: "ragnorthbold", serif;
+      display: flex;
+
+      h1 {
+        align-self: flex-end;
+      }
+    }
+
+    .div2 {
+      letter-spacing: 2vw;
+      font-family: "wagonextra_light_italic", serif;
+
+      h1 {
+        text-align: center;
+        font-weight: 300;
+      }
+    }
+    .div3 {
+      margin-top: -25vw;
+      margin-left: -3vw;
+      p {
+        text-align: left;
+      }
+    }
+
+    .div4 {
+      font-family: "helveticaoblique";
+      text-align: center;
+    }
+  }
+
+  /* ------- SEGUNDO -------*/
+  .second {
+    h1 {
+      font-family: "wagonextra_light", serif;
+      margin: 0 0 0 0;
+      font-size: 11vw;
+      font-weight: 550;
+    }
+
+    .div1,
+    .div4 {
+      text-align: right;
+
+      h1 {
+        font-family: "wagonextra_light_italic", serif;
+        font-weight: 100;
+      }
+    }
+
+    .div3 {
+      hr {
+        visibility: hidden;
+      }
+    }
+  }
+
+  /* ------- TERCEIRO -------*/
+  .third {
+    .hiddenn {
+      opacity: 1;
+    }
+
+    p {
+      position: relative;
+      font-size: 4vw;
+      font-variant: small-caps;
+      width: 75vw;
+    }
+
+    .about {
+      :nth-child(2) {
+        margin-top: 5vw;
+      }
+    }
+  }
+
+  /* ------- ULTIMO -------*/
+
+  .last {
+    h1 {
+      font-family: "wagonextra_light", serif;
+      margin: 0 0 0 0;
+      font-weight: 100;
+      font-size: 7.8vw;
+    }
+
+    h2 {
+      font-size: 6vw;
+      font-family: "wagonextra_light_italic", serif;
+      margin: 0 0 0 0;
+      font-weight: 50;
+    }
+  }
 }

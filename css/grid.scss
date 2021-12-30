@@ -1,108 +1,421 @@
-
 $backgroundColor: rgb(22, 22, 22);
-$textColor : #ddd;
+$textColor: #ddd;
 
 /* ===== Scrollbar CSS ===== */
-  /* Firefox */
-  * {
-    scrollbar-width: none;
-    scrollbar-color: #dddddd #222222;
+/* Firefox 
+* {
+  scrollbar-width: none;
+  scrollbar-color: #dddddd #222222;
 }
 
-/* Chrome, Edge, and Safari */
+/* Chrome, Edge, and Safari 
 *::-webkit-scrollbar {
-    width: 7px;
+  width: 7px;
 }
 
 *::-webkit-scrollbar-track {
-    background: #222222;
+  background: #222222;
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: #dddddd;
-    border-radius: 30px;
-    border: 0px none #ffffff;
-}
+  background-color: #dddddd;
+  border-radius: 30px;
+  border: 0px none #ffffff;
+}*/
 
+::-webkit-scrollbar {
+  display: none;
+}
 
 /* ===== FONTS ===== */
 @font-face {
-    font-family: 'helveticaregular';
-    src: url('fonts/helvetica-webfont.woff2') format('woff2'),
-         url('fonts/helvetica-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "helveticaregular";
+  src: url("../fonts/helvetica-webfont.woff2") format("woff2"),
+    url("../fonts/helvetica-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'helveticabold';
-    src: url('fonts/helvetica-bold-webfont.woff2') format('woff2'),
-         url('fonts/helvetica-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "helveticabold";
+  src: url("../fonts/helvetica-bold-webfont.woff2") format("woff2"),
+    url("../fonts/helvetica-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'helveticabold_oblique';
-    src: url('fonts/helvetica-boldoblique-webfont.woff2') format('woff2'),
-         url('fonts/helvetica-boldoblique-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "helveticabold_oblique";
+  src: url("../fonts/helvetica-boldoblique-webfont.woff2") format("woff2"),
+    url("../fonts/helvetica-boldoblique-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'helveticaoblique';
-    src: url('fonts/helvetica-oblique-webfont.woff2') format('woff2'),
-         url('fonts/helvetica-oblique-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "helveticaoblique";
+  src: url("../fonts/helvetica-oblique-webfont.woff2") format("woff2"),
+    url("../fonts/helvetica-oblique-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'wagonextra_light_italic';
-    src: url('fonts/wagon-extralightitalic-webfont.woff2') format('woff2'),
-         url('fonts/wagon-extralightitalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "wagonextra_light_italic";
+  src: url("../fonts/wagon-extralightitalic-webfont.woff2") format("woff2"),
+    url("../fonts/wagon-extralightitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'ragnorthbold';
-    src: url('fonts/wagon-bold-webfont.woff2') format('woff2'),
-         url('fonts/wagon-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "ragnorthbold";
+  src: url("../fonts/wagon-bold-webfont.woff2") format("woff2"),
+    url("../fonts/wagon-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'wagonextra_light';
-    src: url('fonts/wagon-extralight-webfont.woff2') format('woff2'),
-         url('fonts/wagon-extralight-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "wagonextra_light";
+  src: url("../fonts/wagon-extralight-webfont.woff2") format("woff2"),
+    url("../fonts/wagon-extralight-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
-
 
 /* ===== Estilos basicos ===== */
 body {
-    /*cursor: none; */
-    background-color: $backgroundColor;
-    background-image: linear-gradient(0deg, transparent 24%, rgba(255, 255, 255, .05) 25%, rgba(255, 255, 255, .05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .05) 75%, transparent 77%, transparent), 
-    linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, .05) 25%, rgba(255, 255, 255, .05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .05) 75%, transparent 77%, transparent);
-    background-size:50px 50px;
-    color: $textColor;
+  /*cursor: none; */
+  background-color: $backgroundColor;
+  background-image: linear-gradient(
+      0deg,
+      transparent 24%,
+      rgba(255, 255, 255, 0.05) 25%,
+      rgba(255, 255, 255, 0.05) 26%,
+      transparent 27%,
+      transparent 74%,
+      rgba(255, 255, 255, 0.05) 75%,
+      transparent 77%,
+      transparent
+    ),
+    linear-gradient(
+      90deg,
+      transparent 24%,
+      rgba(255, 255, 255, 0.05) 25%,
+      rgba(255, 255, 255, 0.05) 26%,
+      transparent 27%,
+      transparent 74%,
+      rgba(255, 255, 255, 0.05) 75%,
+      transparent 77%,
+      transparent
+    );
+  background-size: 50px 50px;
+  color: $textColor;
+  overflow-x: hidden;
 }
 
-body::before{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    content: "";
-    opacity: .02;
-    pointer-events: none;
-    background: url(../img/noise.gif) ;
+body::before {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  content: "";
+  opacity: 0.02;
+  pointer-events: none;
+  background: url(../img/noise.gif);
+}
+
+p {
+  font-family: "helveticaregular";
+  font-size: 0.9vw;
+}
+
+a {
+  color: $textColor;
+  text-decoration: none;
 }
 
 /* ===== Grelha ===== */
+div {
+  margin: 0 0 0 0;
+}
+
+.clear {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media only screen and (min-width: 1101px) {
+  .clear {
+    height: 15vh;
+  }
+
+  .panel {
+    height: 100vh !important;
+  }
+
+  .first {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    .div1 {
+      grid-area: 2 / 9 / 3 / 14;
+    }
+    .div2 {
+      grid-area: 3 / 8 / 4 / 12;
+    }
+    .div3 {
+      grid-area: 3 / 12 / 4 / 14;
+    }
+    .div4 {
+      grid-area: 1 / 9 / 2 / 13;
+    }
+    .div5 {
+      grid-area: 4 / 9 / 5 / 13;
+    }
+  }
+
+  .second {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    .div1 {
+      grid-area: 1 / 13 / 2 / 20;
+    }
+    .div2 {
+      grid-area: 2 / 2 / 3 / 12;
+    }
+    .div3 {
+      grid-area: 2 / 12 / 3 / 20;
+    }
+    .div4 {
+      grid-area: 3 / 11 / 4 / 20;
+    }
+    .div5 {
+      grid-area: 4 / 2 / 5 / 16;
+    }
+  }
+
+  .third {
+    height: 40vw;
+  }
+
+  .last {
+    margin-right: 6vw;
+    margin-left: 6vw;
+
+    p {
+      margin: 0 0 0 0;
+    }
+    .grelha {
+      .pG > * {
+        display: inline-block;
+        vertical-align: top;
+      }
+
+      .numero {
+        margin-left: 2vw;
+        margin-top: 1.5vw;
+        width: 18vw;
+      }
+
+      .proj {
+        margin-top: 1.5vw;
+        margin-bottom: 2vw;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 640px) and (max-width: 1100px) {
+  .clear {
+    height: 15vh;
+  }
+
+  p {
+    font-size: 1.2vw;
+  }
+
+  .first {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+  .div1 {
+    grid-area: 2 / 6 / 3 / 10;
+  }
+  .div2 {
+    grid-area: 3 / 5 / 4 / 8;
+  }
+  .div3 {
+    grid-area: 3 / 8 / 4 / 10;
+  }
+  .div4 {
+    grid-area: 1 / 7 / 2 / 9;
+  }
+  .div5 {
+    grid-area: 4 / 9 / 5 / 13;
+  }
+
+  .second {
+    height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    .div1 {
+      grid-area: 1 / 8 / 2 / 14;
+    }
+    .div2 {
+      grid-area: 2 / 2 / 3 / 11;
+    }
+    .div3 {
+      grid-area: 2 / 11 / 3 / 14;
+    }
+    .div4 {
+      grid-area: 3 / 6 / 4 / 14;
+    }
+    .div5 {
+      grid-area: 4 / 2 / 5 / 12;
+    }
+  }
+
+  .third {
+    margin-right: 10vw;
+    margin-left: 10vw;
+    height: 60vh;
+  }
+
+  .last {
+    height: 70vh;
+    margin-right: 6vw;
+    margin-left: 6vw;
+
+    p {
+      margin: 0 0 0 0;
+    }
+    .grelha {
+      .pG > * {
+        display: inline-block;
+        vertical-align: top;
+      }
+
+      .numero {
+        margin-left: 2vw;
+        margin-top: 1.5vw;
+        width: 18vw;
+      }
+
+      .proj {
+        margin-top: 1.5vw;
+        margin-bottom: 2vw;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .clear {
+    height: 15vh;
+  }
+
+  p {
+    font-size: 2.8vw;
+  }
+
+  .first {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    .div1 {
+      grid-area: 2 / 1 / 3 / 8;
+    }
+    .div2 {
+      grid-area: 3 / 1 / 4 / 8;
+    }
+    .div3 {
+      grid-area: 4 / 3 / 5 / 6;
+    }
+    .div4 {
+      grid-area: 1 / 3 / 2 / 7;
+    }
+  }
+
+  .second {
+    margin-right: 2vw;
+    margin-left: 2vw;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    .div1 {
+      grid-area: 1 / 1 / 2 / 9;
+    }
+    .div2 {
+      grid-area: 2 / 1 / 3 / 9;
+    }
+    .div4 {
+      grid-area: 3 / 1 / 4 / 9;
+    }
+    .div5 {
+      grid-area: 4 / 1 / 5 / 9;
+    }
+  }
+
+  .third {
+    margin-top: 10vh;
+    margin-right: 10vw;
+    margin-left: 10vw;
+    height: 140vw;
+  }
+
+  .last {
+    height: 80vh;
+    margin-right: 6vw;
+    margin-left: 6vw;
+
+    p {
+      margin: 0 0 0 0;
+    }
+    .grelha {
+      .pG > * {
+        height: 10vh;
+        display: inline-block;
+        vertical-align: top;
+      }
+
+      .numero {
+        margin-left: 2vw;
+        margin-top: 1.5vw;
+        width: 9vw;
+      }
+
+      .proj {
+        margin-top: 1.5vw;
+        margin-bottom: 2vw;
+      }
+    }
+  }
+}
