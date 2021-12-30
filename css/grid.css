@@ -76,12 +76,42 @@
 /* ===== Estilos basicos ===== */
 body {
   /*cursor: none; */
-  background-color: #161616;
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(24%, transparent), color-stop(25%, rgba(255, 255, 255, 0.05)), color-stop(26%, rgba(255, 255, 255, 0.05)), color-stop(27%, transparent), color-stop(74%, transparent), color-stop(75%, rgba(255, 255, 255, 0.05)), color-stop(77%, transparent), to(transparent)), -webkit-gradient(linear, left top, right top, color-stop(24%, transparent), color-stop(25%, rgba(255, 255, 255, 0.05)), color-stop(26%, rgba(255, 255, 255, 0.05)), color-stop(27%, transparent), color-stop(74%, transparent), color-stop(75%, rgba(255, 255, 255, 0.05)), color-stop(77%, transparent), to(transparent));
-  background-image: linear-gradient(0deg, transparent 24%, rgba(255, 255, 255, 0.05) 25%, rgba(255, 255, 255, 0.05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, 0.05) 75%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, 0.05) 25%, rgba(255, 255, 255, 0.05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, 0.05) 75%, transparent 77%, transparent);
-  background-size: 50px 50px;
-  color: #ddd;
+  background-color: #ddd;
+  /*background-image: linear-gradient(
+      0deg,
+      transparent 24%,
+      rgba(255, 255, 255, 0.05) 25%,
+      rgba(255, 255, 255, 0.05) 26%,
+      transparent 27%,
+      transparent 74%,
+      rgba(255, 255, 255, 0.05) 75%,
+      transparent 77%,
+      transparent
+    ),
+    linear-gradient(
+      90deg,
+      transparent 24%,
+      rgba(255, 255, 255, 0.05) 25%,
+      rgba(255, 255, 255, 0.05) 26%,
+      transparent 27%,
+      transparent 74%,
+      rgba(255, 255, 255, 0.05) 75%,
+      transparent 77%,
+      transparent
+    );
+  background-size: 50px 50px;*/
+  color: #161616;
   overflow-x: hidden;
+}
+
+.orb-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
 }
 
 body::before {
@@ -102,7 +132,7 @@ p {
 }
 
 a {
-  color: #ddd;
+  color: #161616;
   text-decoration: none;
 }
 

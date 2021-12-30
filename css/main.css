@@ -11,15 +11,13 @@
 shift+alt+f
 */
 /* ------- scrollbar -------*/
-progress {
+/*progress {
   -webkit-appearance: none;
-  -moz-appearance: none;
-       appearance: none;
+  appearance: none;
   position: fixed;
   top: 0;
   right: 0;
-  -webkit-transform: translate(calc(50% - 3px), calc(50vh - 50%)) rotate(90deg);
-          transform: translate(calc(50% - 3px), calc(50vh - 50%)) rotate(90deg);
+  transform: translate(calc(50% - 3px), calc(50vh - 50%)) rotate(90deg);
   width: 100vh;
   height: 6px;
 }
@@ -36,8 +34,7 @@ progress::-webkit-progress-value {
   background-color: #ddd;
   border-bottom-right-radius: 5px;
   border-top-right-radius: 5px;
-}
-
+}*/
 @media only screen and (min-width: 1101px) {
   /* ------- PRIMEIRO -------*/
   .first p {
