@@ -10,31 +10,6 @@
 
 shift+alt+f
 */
-/* ------- scrollbar -------*/
-/*progress {
-  -webkit-appearance: none;
-  appearance: none;
-  position: fixed;
-  top: 0;
-  right: 0;
-  transform: translate(calc(50% - 3px), calc(50vh - 50%)) rotate(90deg);
-  width: 100vh;
-  height: 6px;
-}
-
-progress::-webkit-progress-bar {
-  background-color: transparent;
-}
-
-progress[value="100"]::-webkit-progress-bar {
-  background-color: #ddd;
-}
-
-progress::-webkit-progress-value {
-  background-color: #ddd;
-  border-bottom-right-radius: 5px;
-  border-top-right-radius: 5px;
-}*/
 @media only screen and (min-width: 1101px) {
   /* ------- PRIMEIRO -------*/
   .first p {
@@ -105,8 +80,8 @@ progress::-webkit-progress-value {
     margin-left: auto;
     margin-right: auto;
     border-style: inset;
-    border-width: 1px;
-    color: #ddd;
+    border-width: 2px;
+    color: #161616;
   }
   /* ------- TERCEIRO -------*/
   .third .hiddenn {
@@ -203,7 +178,7 @@ progress::-webkit-progress-value {
     margin-right: auto;
     border-style: inset;
     border-width: 1px;
-    color: #ddd;
+    color: #161616;
   }
   /* ------- TERCEIRO -------*/
   .third .hiddenn {
