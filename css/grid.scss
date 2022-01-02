@@ -64,31 +64,8 @@ $textColor: rgb(22, 22, 22);
 
 /* ===== Estilos basicos ===== */
 body {
-  /*cursor: none; */
+  cursor: none !important;
   background-color: $backgroundColor;
-  /*background-image: linear-gradient(
-      0deg,
-      transparent 24%,
-      rgba(255, 255, 255, 0.05) 25%,
-      rgba(255, 255, 255, 0.05) 26%,
-      transparent 27%,
-      transparent 74%,
-      rgba(255, 255, 255, 0.05) 75%,
-      transparent 77%,
-      transparent
-    ),
-    linear-gradient(
-      90deg,
-      transparent 24%,
-      rgba(255, 255, 255, 0.05) 25%,
-      rgba(255, 255, 255, 0.05) 26%,
-      transparent 27%,
-      transparent 74%,
-      rgba(255, 255, 255, 0.05) 75%,
-      transparent 77%,
-      transparent
-    );
-  background-size: 50px 50px;*/
   color: $textColor;
   overflow-x: hidden;
 }
@@ -125,6 +102,10 @@ a {
   text-decoration: none;
 }
 
+.hoverable {
+  cursor: none !important;
+}
+
 /* ===== Grelha ===== */
 div {
   margin: 0 0 0 0;
@@ -136,9 +117,7 @@ div {
   clear: both;
 }
 
-
 @media only screen and (min-width: 1101px) {
-  
   .clear {
     height: 15vh;
   }
@@ -188,7 +167,13 @@ div {
       grid-area: 2 / 12 / 3 / 20;
     }
     .div4 {
-      grid-area: 3 / 11 / 4 / 20;
+      grid-area: 3 / 2 / 4 / 20;
+      white-space: nowrap;
+
+      .el{
+        position: absolute;
+        right:5%;
+      }
     }
     .div5 {
       grid-area: 4 / 2 / 5 / 16;
@@ -279,6 +264,12 @@ div {
     }
     .div4 {
       grid-area: 3 / 6 / 4 / 14;
+      white-space: nowrap;
+
+      .el{
+        position: absolute;
+        right:5%;
+      }
     }
     .div5 {
       grid-area: 4 / 2 / 5 / 12;
@@ -368,6 +359,12 @@ div {
     }
     .div4 {
       grid-area: 3 / 1 / 4 / 9;
+      white-space: nowrap;
+
+      .el{
+        position: absolute;
+        right:5%;
+      }
     }
     .div5 {
       grid-area: 4 / 1 / 5 / 9;

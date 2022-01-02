@@ -8,14 +8,11 @@
 
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/grid.css" />
-    <!--<link rel="stylesheet" href="css/cursor.css">-->
+    <link rel="stylesheet" href="css/cursor.css">
   </head>
   <body>
+    <div class="cursor"></div>
     <canvas class="orb-canvas"></canvas>
-    <!--<div class="cursor">
-        <div class="cursorSmall"></div>
-        <div class="cursorBig"></div>
-    </div>-->
 
     <main>
       <section class="panel first">
@@ -29,17 +26,6 @@
         <div class="div3">
           <p>SOON TO BE DESIGNER</p>
         </div>
-        <!--<div class="social col-20">
-            <div>
-                <p><a href="https://www.instagram.com/ltejo_/">Instagram</a></p>
-                <p><a href="https://twitter.com/tejolasss">Twitter</a></p>
-                <p><a href="https://www.behance.net/leonortejo">Behance</a></p>
-            </div>
-        </div>-->
-
-        <!--<div class="div5">
-            <p>SCROLL OR DIE</p>
-        </div>-->
       </section>
 
       <section class="panel second">
@@ -54,17 +40,14 @@
           <hr />
         </div>
         <div class="div4">
-          <h1>yet student</h1>
+          <h1 class="el">yet student</h1>
+          <h1 class="el">ux/ui designer</h1>
+          <h1 class="el">graphic designer</h1>
         </div>
-        <!--<ul>
-                <li><h1>yet student</h1></li>
-                <li><h1>ux/ui designer</h1></li>
-                <li><h1>graphic designer</h1></li>
-            </ul>-->
         <div class="div5">
           <h1>
             Based in
-            <a href="https://www.visitportugal.com/en/node/73754">Coimbra</a>
+            <a href="https://www.visitportugal.com/en/node/73754" target="_blank" class="hoverable">Coimbra</a>
           </h1>
           <p>COME VISIT ME!</p>
         </div>
@@ -72,7 +55,7 @@
 
       <section class="third">
         <div class="about">
-          <p>
+          <p class="textP">
             As you may already know, my name is Leonor Tejo, I’m a Masters
             student in Design and Multimedia, and I’m 21 years old. Born and
             raised in Coimbra I have always been very curious and interested in
@@ -82,11 +65,10 @@
             is sports. Daily training in water polo is essential and, as they
             say, the work pays off, having achieved in four years more than
             fifteen national titles.
-            <span class="hiddenn">aim of not making this text the description of a dating app
-              profile: fail</span
-            >
+            <span class="hiddenn hoverable">aim of not making this text the description of a dating app
+              profile: fail</span>
           </p>
-          <p>
+          <p class="textP">
             I love design and somehow it has always been part of my life. During
             my years of degree in Design and Multimedia, in my beautiful city, I
             learned a lot about the fundamentals of design and managed to deepen
@@ -108,7 +90,7 @@
           <div class="pG">
             <div class="numero"><h2>01</h2></div>
             <div class="proj">
-              <h1>Maria</h1>
+              <h1><a href="https://www.behance.net/gallery/123007229/MARIA-Mobile-App-Lifestyle-Menstrual-Cycle-Tracker" target="_blank" class="hoverable">Maria</a></h1>
               <p>MOBILE APP</p>
             </div>
           </div>
@@ -116,7 +98,7 @@
           <div class="pG">
             <div class="numero"><h2>02</h2></div>
             <div class="proj">
-              <h1>PCD Coimbra</h1>
+              <h1><a href="https://www.behance.net/gallery/116824895/Processing-Community-day-Coimbra-2020-Poster" target="_blank" class="hoverable">PCD Coimbra</a></h1>
               <p>INTERACTIVE POSTER</p>
             </div>
           </div>
@@ -124,7 +106,7 @@
           <div class="pG">
             <div class="numero"><h2>03</h2></div>
             <div class="proj">
-              <h1>All Summer in a Day</h1>
+              <h1><a href="https://www.behance.net/gallery/123262739/All-Summer-in-a-Day-Ray-Bradbury" target="_blank" class="hoverable">All Summer in a Day</a></h1>
               <p>TRANSMEDIATION PROJECT</p>
             </div>
           </div>
@@ -133,8 +115,11 @@
       </section>
     </main>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    
     <script src="js/cursor.js"></script>
     <script src="js/main.js"></script>
     <script type="module" src="js/back.js"></script>

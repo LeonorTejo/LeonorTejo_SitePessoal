@@ -4,6 +4,25 @@
     "debounce": "^1.2.1",
     "hsl-to-hex": "^1.0.0",
     "pixi.js": "^6.2.1",
-    "simplex-noise": "^3.0.0"
-  }
+    "simplex-noise": "^3.0.0",
+    "smooth-scrollbar": "^8.7.2"
+  },
+  "name": "leonortejo_sitepessoal",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeonorTejo/LeonorTejo_SitePessoal.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeonorTejo/LeonorTejo_SitePessoal/issues"
+  },
+  "homepage": "https://github.com/LeonorTejo/LeonorTejo_SitePessoal#readme",
+  "description": ""
 }
