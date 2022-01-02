@@ -68,14 +68,8 @@ class ColorPalette {
   setCustomProperties() {
     // set CSS custom properties so that the colors defined here can be used throughout the UI
     document.documentElement.style.setProperty("--hue", this.hue);
-    document.documentElement.style.setProperty(
-      "--hue-complimentary1",
-      this.complimentaryHue1
-    );
-    document.documentElement.style.setProperty(
-      "--hue-complimentary2",
-      this.complimentaryHue2
-    );
+    document.documentElement.style.setProperty("--hue-complimentary1", this.complimentaryHue1);
+    document.documentElement.style.setProperty("--hue-complimentary2", this.complimentaryHue2);
   }
 }
 
@@ -126,7 +120,7 @@ class Orb {
     const originY =
       window.innerWidth < 1000
         ? window.innerHeight
-        : window.innerHeight / 1.5;
+        : window.innerHeight / 2;
 
     // allow each orb to move x distance away from it's x / y origin
     return {
