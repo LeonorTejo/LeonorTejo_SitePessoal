@@ -381,6 +381,17 @@ shift+alt+f
       margin: 0 0 0 0;
       font-weight: 50;
     }
+
+    hr {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-style: inset;
+      padding: 0;
+      height: 1.5px;
+      border: 0;
+      border-top: 1.5px solid rgb(22, 22, 22);
+    }
   }
 }
 
@@ -486,6 +497,16 @@ shift+alt+f
       font-family: "wagonextra_light_italic", serif;
       margin: 0 0 0 0;
       font-weight: 50;
+    }
+    hr {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-style: inset;
+      padding: 0;
+      height: 1.5px;
+      border: 0;
+      border-top: 1.5px solid rgb(22, 22, 22);
     }
   }
 }

@@ -303,6 +303,16 @@ shift+alt+f
     margin: 0 0 0 0;
     font-weight: 50;
   }
+  .last hr {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    padding: 0;
+    height: 1.5px;
+    border: 0;
+    border-top: 1.5px solid #161616;
+  }
 }
 
 @media only screen and (max-width: 450px) {
@@ -385,6 +395,16 @@ shift+alt+f
     font-family: "wagonextra_light_italic", serif;
     margin: 0 0 0 0;
     font-weight: 50;
+  }
+  .last hr {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    padding: 0;
+    height: 1.5px;
+    border: 0;
+    border-top: 1.5px solid #161616;
   }
 }
 /*# sourceMappingURL=main.css.map */
